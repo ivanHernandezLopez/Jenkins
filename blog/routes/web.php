@@ -14,3 +14,22 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/users', function () {
+    return 'Usuarios';
+});
+
+
+Route::get('/user/{id}', function ($id) {
+    return 'Detale de usuario ' . $id ;
+});
+
+Route::get('/user', function () {
+    return 'Creando usuario' ;
+});
+
+
+Route::get('/user/{id}/view', function ($id) {
+    return 'Vista de usuario ' . $id ;
+});
+
