@@ -15,21 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/users', function () {
-    return 'Usuarios';
-});
+Route::get('/users', 'UsersController@index');
 
+Route::get('/user/{id}', 'UsersController@show');
 
-Route::get('/user/{id}', function ($id) {
-    return 'Detale de usuario ' . $id ;
-});
+Route::get('/user', 'UsersController@create');
 
-Route::get('/user', function () {
-    return 'Creando usuario' ;
-});
-
-
-Route::get('/user/{id}/view', function ($id) {
-    return 'Vista de usuario ' . $id ;
-});
+Route::get('/user/{id}/edit', 'UsersController@edit');
 

@@ -19,7 +19,7 @@ class UserModuleTest extends TestCase
     }
 
     /** @test */
-    function it_loads_the_users_details_page()
+    function it_loads_the_users_show_page()
     {
         $response = $this->get('/user/5');
 
@@ -39,9 +39,9 @@ class UserModuleTest extends TestCase
     }
 
         /** @test */
-    function it_loads_the_users_view_page()
+    function it_loads_the_users_edit_page()
     {
-        $response = $this->get('/user/7/view');
+        $response = $this->get('/user/7/edit');
 
         $response->assertStatus(200);
         

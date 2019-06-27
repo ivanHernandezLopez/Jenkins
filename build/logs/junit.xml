@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="6" assertions="10" errors="0" failures="0" skipped="0" time="2.923178">
-    <testsuite name="Unit" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="1.130867">
-      <testsuite name="Tests\Unit\ExampleTest" file="/var/www/html/Jenkins/tests/Unit/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="1.130867">
-        <testcase name="testBasicTest" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="/var/www/html/Jenkins/tests/Unit/ExampleTest.php" line="15" assertions="1" time="1.130867"/>
+  <testsuite name="" tests="6" assertions="10" errors="0" failures="0" skipped="0" time="1.051782">
+    <testsuite name="Unit" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.289229">
+      <testsuite name="Tests\Unit\ExampleTest" file="/var/www/html/Jenkins/tests/Unit/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.289229">
+        <testcase name="testBasicTest" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="/var/www/html/Jenkins/tests/Unit/ExampleTest.php" line="15" assertions="1" time="0.289229"/>
       </testsuite>
     </testsuite>
-    <testsuite name="Feature" tests="5" assertions="9" errors="0" failures="0" skipped="0" time="1.792311">
-      <testsuite name="Tests\Feature\ExampleTest" file="/var/www/html/Jenkins/tests/Feature/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.524980">
-        <testcase name="testBasicTest" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" file="/var/www/html/Jenkins/tests/Feature/ExampleTest.php" line="15" assertions="1" time="0.524980"/>
+    <testsuite name="Feature" tests="5" assertions="9" errors="0" failures="0" skipped="0" time="0.762553">
+      <testsuite name="Tests\Feature\ExampleTest" file="/var/www/html/Jenkins/tests/Feature/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.163023">
+        <testcase name="testBasicTest" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" file="/var/www/html/Jenkins/tests/Feature/ExampleTest.php" line="15" assertions="1" time="0.163023"/>
       </testsuite>
-      <testsuite name="Tests\Feature\UserModuleTest" file="/var/www/html/Jenkins/tests/Feature/UserModuleTest.php" tests="4" assertions="8" errors="0" failures="0" skipped="0" time="1.267331">
-        <testcase name="it_loads_the_users_list_page" class="Tests\Feature\UserModuleTest" classname="Tests.Feature.UserModuleTest" file="/var/www/html/Jenkins/tests/Feature/UserModuleTest.php" line="12" assertions="2" time="0.445993"/>
-        <testcase name="it_loads_the_users_details_page" class="Tests\Feature\UserModuleTest" classname="Tests.Feature.UserModuleTest" file="/var/www/html/Jenkins/tests/Feature/UserModuleTest.php" line="22" assertions="2" time="0.201723"/>
-        <testcase name="it_loads_the_users_create_page" class="Tests\Feature\UserModuleTest" classname="Tests.Feature.UserModuleTest" file="/var/www/html/Jenkins/tests/Feature/UserModuleTest.php" line="32" assertions="2" time="0.452637"/>
-        <testcase name="it_loads_the_users_view_page" class="Tests\Feature\UserModuleTest" classname="Tests.Feature.UserModuleTest" file="/var/www/html/Jenkins/tests/Feature/UserModuleTest.php" line="42" assertions="2" time="0.166978"/>
+      <testsuite name="Tests\Feature\UserModuleTest" file="/var/www/html/Jenkins/tests/Feature/UserModuleTest.php" tests="4" assertions="8" errors="0" failures="0" skipped="0" time="0.599530">
+        <testcase name="it_loads_the_users_list_page" class="Tests\Feature\UserModuleTest" classname="Tests.Feature.UserModuleTest" file="/var/www/html/Jenkins/tests/Feature/UserModuleTest.php" line="12" assertions="2" time="0.155632"/>
+        <testcase name="it_loads_the_users_show_page" class="Tests\Feature\UserModuleTest" classname="Tests.Feature.UserModuleTest" file="/var/www/html/Jenkins/tests/Feature/UserModuleTest.php" line="22" assertions="2" time="0.153564"/>
+        <testcase name="it_loads_the_users_create_page" class="Tests\Feature\UserModuleTest" classname="Tests.Feature.UserModuleTest" file="/var/www/html/Jenkins/tests/Feature/UserModuleTest.php" line="32" assertions="2" time="0.145972"/>
+        <testcase name="it_loads_the_users_edit_page" class="Tests\Feature\UserModuleTest" classname="Tests.Feature.UserModuleTest" file="/var/www/html/Jenkins/tests/Feature/UserModuleTest.php" line="42" assertions="2" time="0.144362"/>
       </testsuite>
     </testsuite>
   </testsuite>
