@@ -16,8 +16,17 @@ pipeline {
       }
     }
     stage('error') {
-      steps {
-        echo 'Sonar Scanner'
+      parallel {
+        stage('error') {
+          steps {
+            echo 'Sonar Scanner'
+          }
+        }
+        stage('') {
+          steps {
+            withSonarQubeEnv(installationName: 'jenkins-github', credentialsId: 'jenkins-github')
+          }
+        }
       }
     }
   }
