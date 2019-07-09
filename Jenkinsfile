@@ -17,7 +17,7 @@ pipeline {
     }
     stage('error') {
       steps {
-        sh 'composer update'
+        echo 'Sonar Scanner'
       }
     }
   }
