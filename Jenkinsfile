@@ -6,5 +6,10 @@ pipeline {
         echo 'Iniciando Integracion Continua'
       }
     }
+    stage('') {
+      steps {
+        sh 'composer update'
+      }
+    }
   }
 }
