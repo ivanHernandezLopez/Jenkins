@@ -2,11 +2,20 @@ pipeline {
   agent any
   stages {
     stage('Inicio') {
-      steps {
-        echo 'Iniciando Integracion Continua'
+      parallel {
+        stage('Inicio') {
+          steps {
+            echo 'Iniciando Integracion Continua'
+          }
+        }
+        stage('Clone') {
+          steps {
+            git(url: 'https://github.com/ivanHernandezLopez/Jenkins', branch: 'feature/pipeline', changelog: true, poll: true)
+          }
+        }
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         sh 'composer update'
       }
